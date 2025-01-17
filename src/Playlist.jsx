@@ -6,14 +6,14 @@ const Box = () => (
         <div className="container">
             <div className="item1">
                 <ul>
-                    <li><a className="aditya_sutar" href="/home">Aditya Sutar</a></li>
+                    <li><a className="aditya_sutar" href="/">Aditya Sutar</a></li>
                 </ul>
             </div>
 
             <div className="item2">
                 <ul>
                     <li><a className="nav_links" href="/projects">Projects</a></li>
-                    <li><a href="favicon_ico/Aditya-Hemant-Sutar.pdf" target="_blank" className="nav_links">Resume</a></li>
+                    <li><a href="favicon_ico/Aditya-Hemant-Sutar-1.pdf" target="_blank" className="nav_links">Resume</a></li>
                 </ul>
             </div>
         </div>
@@ -303,7 +303,7 @@ const Box = () => (
 );
 
 export default function Playlist() {
-    console.log("Rendering Playlist");
+    window.scrollTo({top: 0, behavior:'smooth'})
     return(
         <>
             <Box />

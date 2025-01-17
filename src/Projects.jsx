@@ -12,7 +12,7 @@ const ProjectInfo = () => (
 
             <div className="item2">
                 <ul>
-                    <li><a href="favicon_ico/Aditya-Hemant-Sutar.pdf" target="_blank" className="nav_links">Resume</a></li>
+                    <li><a href="favicon_ico/Aditya-Hemant-Sutar-1.pdf" target="_blank" className="nav_links">Resume</a></li>
                     <li><a href="/playlist" className="nav_links">Playlist</a></li>
                 </ul>
             </div>

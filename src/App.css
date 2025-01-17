@@ -50,6 +50,7 @@ html {
 }
 
 .work1{
+  text-decoration: none;
   color: #FFE4E1;
 }
 
@@ -383,13 +384,14 @@ footer {
   }
 }
 
-.heading{
+.heading {
   font-family: "Playfair Display", serif;
   color: inherit;
   background-color: inherit;
   width: inherit;
   text-align: center;
   align-content: center;
+  text-decoration: none;
 }
 
 
