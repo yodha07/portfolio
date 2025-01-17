@@ -1,5 +1,4 @@
 import './App.css';
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const ProjectInfo = () => (
@@ -55,10 +54,8 @@ const ProjectInfo = () => (
     </div>
 );
 
-export default function Project () {
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }, []);
+export default function Project() {
+    window.scrollTo({top: 0, behavior:'smooth'})
     return(
     <>
         <ProjectInfo />;
