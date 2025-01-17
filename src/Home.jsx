@@ -39,7 +39,7 @@ const Vanessa = () => (
     <Link to="/playlist" className="playlist">
       Playlist &#8594;
     </Link>
-    <Link to="public/favicon_ico/Aditya-Hemant-Sutar-1.pdf" target="_blank" className="resume">
+    <Link to="favicon_ico/Aditya-Hemant-Sutar-1.pdf" target="_blank" className="resume">
       Résumé &#8594;
     </Link>
     <Link to="/projects" className="projects">
