@@ -1,0 +1,406 @@
+/* Base Styles */
+* {
+  font-family: "Chocolate Classical Sans", sans-serif;
+  background-color: #0E0D0C;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+.intro, .work1, .work2{
+  font-size: clamp(1.5rem, 8vmin, 3.5rem);
+  letter-spacing: -2px;
+  color: white;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.intro1 {
+  color: white;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  text-decoration-color: red;
+}
+
+.intro1:hover {
+  color: red;
+  transition: 0.3s ease-in-out;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.work1, .work2 {
+  width: 50%;
+  height: 98vh;
+  color: #0E0D0C;
+  border: 1rem solid transparent;
+  background-color: rgb(255, 145, 0);
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.work1{
+  color: #FFE4E1;
+}
+
+.work2 {
+  background-color:#F98866 ;
+  color: #FFF2D7;
+}
+
+.work1 div, .work2 div {
+  width: 100%;
+  text-align: center;
+  background-color: inherit;
+  color: inherit;
+}
+
+.work1:hover {
+  background-color: #FFE4E1;
+  color: rgb(255, 145, 0);
+  border-color: rgb(255, 145, 0);
+  transition: 0.2s;
+}
+
+.work2:hover {
+  background-color: #FFF2D7;
+  color: #F98866;
+  border-color:  #F98866;
+  transition: 0.2s;
+}
+
+.work1 img {
+  width: 100%;
+  display: block;
+  position: relative;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.work1 img:hover, .work2 img:hover {
+  transform: translateY(-15px);
+  transition: 0.2s ease;
+}
+
+.intro {
+  font-weight: 700;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.vanessa {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 25dvh 25dvh 25dvh;
+  grid-template-areas:
+      'playlist empty'
+      'resume empty'
+      'footer empty';
+}
+
+
+/* General Styles */
+.playlist_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-areas: 'empty main';
+}
+
+.project_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-areas: 'empty main';
+}
+
+.project1 img, .project2 img{
+  width: 100%;
+  display: block;
+  position: relative;
+  background-color: transparent;
+}
+
+.project_showcase{
+  grid-area: main;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 50px;
+  grid-template-areas: 'header header2';
+}
+
+.resume {
+  grid-area: resume;
+}
+
+footer {
+  grid-area: footer;
+  align-content: center;
+}
+
+.playlist, .resume, .projects {
+  font-family: "Playfair Display", serif;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  font-size: clamp(2rem, 2rem, 4rem);
+  font-weight: 555;
+}
+
+.playlist {
+  background-color: aqua;
+  color: rgb(253, 72, 72);
+  border: 1rem solid transparent;
+  text-decoration: none;
+}
+
+.playlist:hover {
+  background-color: rgb(253, 72, 72);
+  color: aqua;
+  transition: 0.2s;
+  border-color: aqua;
+}
+
+.resume {
+  color: #0E0D0C;
+  background-color: bisque;
+  border: 1rem solid transparent;
+  text-decoration: none;
+}
+
+.resume:hover {
+  background-color: #0E0D0C;
+  color: bisque;
+  transition: 0.2s;
+  border-color: bisque;
+}
+
+.projects {
+  background-color: rgb(144, 61, 253);
+  grid-area: empty;
+  color: lightsalmon;
+  text-decoration: none;
+  border: 1rem solid transparent;
+}
+
+.projects:hover {
+  background-color: lightsalmon;
+  color: rgb(144, 61, 253);
+  border-color: rgb(144, 61, 253);
+  transition: 0.2s;
+}
+
+.item1, .item2, .item3, .item4 {
+  background-color: #0E0D0C;
+}
+
+.item1 {
+  grid-area: header;
+  background-color: transparent;
+  color: white;
+  padding-left: 2.5%;
+  align-content: center;
+}
+
+.aditya_sutar {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.5rem, 1rem, 5rem);
+  text-decoration: none;
+}
+
+.aditya_sutar:hover{
+  color: red;
+  transition: .2s;
+}
+
+h3:hover {
+  color: red;
+}
+
+.item2 {
+  grid-area: header2;
+  text-align: start;
+  align-content: center;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 2rem, 6rem);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_links {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.5rem, 1rem, 5rem);
+  text-decoration: none;
+  padding-right: 5%;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav_links:hover{   
+  color: red;
+  transition: .2s;
+}
+
+.plainlink {
+  text-decoration: none;
+}
+
+.content {
+  display: grid;
+  align-items: start;
+  grid-area: main;
+  grid-template-columns: 1fr 5fr;
+  border-top: 1px solid #fff;
+}
+
+h3, p {
+  padding-left: 5px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  writing-mode: horizontal-tb;
+}
+
+figure img {
+  display: flex;
+  width: 15vh;
+  margin: 0 auto;
+  flex: 1 1 auto;
+  order: 2;
+  height: 15vh;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.written_matter {
+  line-height: 1.4;
+  margin: 0;
+}
+
+.project_desc{
+  font-family: "Playfair Display";
+  font-size: larger;
+}
+
+.red_asterisk{
+  font-family: "Playfair Display";
+  color: rgb(255, 0, 0);
+}
+
+footer {
+  text-align: center;
+}
+
+
+/* Responsive styles */
+@media (max-width: 660px) {
+  .work1, .work2 {
+      font-size: 1.45rem;
+      width: 100%;
+      height: auto;
+  }
+
+  .work1 img {
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .intro {
+      padding-left: 15px;
+  }
+
+  .intro p{
+      font-size: 2rem;
+  }
+
+  .vanessa {
+      display: grid;
+      grid-template-columns: 2fr;
+      grid-template-rows: 3fr 3fr 3fr 1fr;
+      grid-template-areas:
+          'playlist'
+          'resume'
+          'empty'
+          'footer';
+  }
+  
+  .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 6vh 10vh;
+      grid-template-areas:
+          'header'
+          'header2';
+  }
+
+  .nav_links{
+      padding-left: 2.5%;
+  }
+
+  .playlist_wrapper {
+      grid-template-columns: 1fr;
+      padding-left: 2.5%;
+  }
+
+  .project_wrapper {
+      grid-template-columns: 1fr;
+      padding-left: 2.5%;
+  }
+}
+
+@media (max-width: 999px){
+  .work1, .work2{
+      height: 50vh;
+      font-size: 2rem;
+  }
+}
+
+.heading{
+  font-family: "Playfair Display", serif;
+  color: inherit;
+  background-color: inherit;
+  width: inherit;
+  text-align: center;
+  align-content: center;
+}
+
+
+.hover-text {
+  display: none;
+}
+
+.work2:hover .hover-text1 {
+  display: none;
+}
+
+.work2:hover .hover-text {
+  display: block;
+}
