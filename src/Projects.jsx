@@ -30,7 +30,7 @@ const ProjectInfo = () => (
                 <div className="project1">
                     <h1><span className="red_asterisk">*</span> Siddhesh Pathare's Portfolio</h1>
                     <a target="_blank" href="https://siddheshpathare.vercel.app/">
-                        <img src="/favicon_ico/testportfofin.png" alt="Siddhesh Pathare's Portfolio Screenshot" />
+                        <img src="/favicon_ico/testportfofin.png" loading='lazy' alt="Siddhesh Pathare's Portfolio Screenshot" />
                     </a>
                     <p className="project_desc">Siddhesh Digambar Pathare is a celebrated Thane-based illustrator. Having completed Applied Arts at L.S. Raheja School of Arts, Bandra.
                         This <Link to="https://siddheshpathare.vercel.app/" className="intro1">website</Link> serves as his online portfolio showcasing all of his art at one place.</p>
@@ -39,7 +39,7 @@ const ProjectInfo = () => (
                 <div className="project2">
                     <h1><span className="red_asterisk">*</span> Timepass Valentine's project</h1>
                     <a target="_blank" href="https://pookie-bear-seven.vercel.app/">
-                        <img src="/favicon_ico/testportfo4.png" alt="Valentine's Project Screenshot" />
+                        <img src="/favicon_ico/testportfo4.png" loading='lazy' alt="Valentine's Project Screenshot" />
                     </a>
                     <p className="project_desc">This <Link to="https://pookie-bear-seven.vercel.app/" className="intro1">website</Link> is made for fun, using simple JQuery. When you click "No" on the Pookie Bear site, the playful and charming vibe takes a cheeky turn. It humorously responds with quirky animations and fun dialogue, keeping the lighthearted mood while making you feel gently nudged back to pick "Yes" instead. It’s a clever, interactive way to ensure your special someone can never say NO to being your Valentine!!</p>
                 </div>
@@ -55,7 +55,7 @@ const ProjectInfo = () => (
 );
 
 export default function Project() {
-    window.scrollTo({top: 0})
+    window.scrollTo({top: 0, behavior:'smooth'})
     console.log("Working")
     return(
     <>
