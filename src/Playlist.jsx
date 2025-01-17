@@ -12,7 +12,7 @@ const Box = () => (
 
             <div className="item2">
                 <ul>
-                    <li><a className="nav_links" href="/projects">Projects</a></li>
+                    <li><a href="/projects" className="nav_links">Projects</a></li>
                     <li><a href="favicon_ico/Aditya-Hemant-Sutar-1.pdf" target="_blank" className="nav_links">Resume</a></li>
                 </ul>
             </div>
