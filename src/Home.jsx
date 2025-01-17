@@ -42,9 +42,9 @@ const Vanessa = () => (
     <Link to="favicon_ico/Aditya-Hemant-Sutar-1.pdf" target="_blank" className="resume">
       Résumé &#8594;
     </Link>
-    <Link to="/projects" className="projects">
+    <a href="/projects" className="projects">
       Projects &#8594;
-    </Link>
+    </a>
 
     <footer>
       <p style={{ fontStyle: 'italic', padding: 0, fontSize: '1.5rem' }}>
