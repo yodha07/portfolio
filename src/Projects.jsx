@@ -6,7 +6,7 @@ const ProjectInfo = () => (
         <div className="container">
             <div className="item1">
                 <ul>
-                    <li><a className="aditya_sutar" href="/home">Aditya Sutar</a></li>
+                    <li><a className="aditya_sutar" href="/">Aditya Sutar</a></li>
                 </ul>
             </div>
 
@@ -55,5 +55,6 @@ const ProjectInfo = () => (
 );
 
 export default function Project () {
+    window.scrollTo({top: 0, behavior:'smooth'})
     return <ProjectInfo />;
 }
