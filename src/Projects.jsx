@@ -59,7 +59,9 @@ export default function Project() {
     console.log("Working")
     return(
     <>
-        <ProjectInfo />;
+    <ReactStrictMode>
+    <ProjectInfo />;
+    </ReactStrictMode>
     </> 
     )
 }
