@@ -8,7 +8,7 @@ const Intro = () => (
         Aditya Sutar
       </a>
       . I'm a passionate Computer Engineering graduate with a focus on web development.  
-      I like spending my time listening to my <a href="/root/playlist.html" className="intro1">playlist</a>, thinking, posting, and talking about new Technology: How they work, 
+      I like spending my time listening to my <a href="/playlist" className="intro1">playlist</a>, thinking, posting, and talking about new Technology: How they work, 
       How they break, and the people Who make it!
     </p>
   </div>
