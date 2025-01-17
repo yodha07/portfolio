@@ -56,6 +56,7 @@ const ProjectInfo = () => (
 
 export default function Project() {
     window.scrollTo({top: 0, behavior:'smooth'})
+    console.log("Working")
     return(
     <>
         <ProjectInfo />;
