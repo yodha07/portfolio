@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home.jsx'
 import Playlist from './Playlist.jsx';
 import Project from './Projects.jsx'
+import { Analytics } from "@vercel/analytics/react"
 
 createRoot(document.getElementById('root')).render(
   <Router>
@@ -13,5 +14,6 @@ createRoot(document.getElementById('root')).render(
       <Route path="/playlist" element={<Playlist />} />
       <Route path="/projects" element={<Project />} />
       </Routes>
+      <Analytics/>
   </Router>
 )
