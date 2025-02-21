@@ -1,4 +1,6 @@
 import './App.css';
+import { useState, useEffect } from 'react';
+import Loading from "./Loading";
 
 const Box = () => (
     <>
@@ -303,8 +305,16 @@ const Box = () => (
 );
 
 export default function Playlist() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    },[]);
+    
     window.scrollTo({top: 0, behavior:'smooth'})
-    return(
+    return loading ? <Loading /> :(
         <>
             <Box />
         </>

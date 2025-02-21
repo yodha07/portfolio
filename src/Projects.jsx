@@ -1,4 +1,6 @@
 import './App.css';
+import { useState, useEffect } from 'react';
+import Loading from "./Loading";
 import { Link } from 'react-router-dom';
 
 const ProjectInfo = () => (
@@ -55,12 +57,20 @@ const ProjectInfo = () => (
 );
 
 export default function Project() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    },[]);
+    
     window.scrollTo({top: 0, behavior:'smooth'})
     if (!sessionStorage.getItem('reloaded')) {
         sessionStorage.setItem('reloaded', 'true');
         window.location.reload();
       }      
-    return(
+    return loading ? <Loading/>:(
     <>
     <ProjectInfo />;
     </> 

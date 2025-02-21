@@ -1,5 +1,8 @@
 import './App.css';
+import { useState, useEffect } from 'react';
+import Loading from "./Loading";
 import { Link } from 'react-router-dom';
+
 
 const Intro = () => (
   <div className="intro">
@@ -63,7 +66,15 @@ const Vanessa = () => (
 
 
 export default function Home() {
-  return (
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  },[]);
+
+  return loading ? <Loading /> :(
     <>
       <Intro />
       <WorkSection />
