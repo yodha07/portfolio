@@ -310,7 +310,7 @@ export default function Playlist() {
     useEffect(() => {
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 1000);
     },[]);
     
     window.scrollTo({top: 0, behavior:'smooth'})
